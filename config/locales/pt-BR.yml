@@ -1,4 +1,9 @@
 pt-BR:
+  welcome: "Seja Bem-vindo!"
+  welcome_sub: "Aplicativo de cadastro de Criptomoedas"
+  pick_one: "Selecione uma das opções abaixo"
+  welcome_coin: "Moedas"
+  welcome_types: "Tipos de Mineração"
   links:
     edit: "Editar"
     show: "Mostrar"
@@ -6,3 +11,10 @@ pt-BR:
     nova_moeda: "Nova Moeda"
     novo_tipo: "Novo Tipo"
     voltar: "Voltar"
+    new: "Novo"
+    confirme: "Tem Certeza?"
+    back: "Voltar"
+    edit_coin: "Editar Moeda"
+    edit_type: "Editar Tipo de Minecarção"
+    new_coin: "Nova Moeda"
+    new_type: "Novo Tipo de Mineração"

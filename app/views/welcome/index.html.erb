@@ -1,12 +1,14 @@
+
 <p>
   Crie Suas Proprias Moedas - <strong>Data: <%= I18n.l(Date.today) %></strong>
 </p>
-
-<center>
-  <p>
-    <img src="https://international.aaafx.com/Images/new/content/bitcoin/AAAFx-bitcoin-gif-v1.gif">
-  </p>
-</center>
+<div class="jumbotron">
+  <h1 class="display-4"> <%= t('welcome') %> </h1>
+  <p class="lead"> <%= t('welcome_sub') %> </p>
+  <hr class="my-4">
+  <p> <%= t('pick_one') %> </p>
+  <%= render "menu" %>
+</div>
 
 
 <%#= render "menu"%>

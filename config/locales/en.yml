@@ -31,7 +31,19 @@
 
 en:
   hello: "Hello world"
+  welcome: "Welcome"
+  welcome_sub: "Crypto Wallet Application"
+  pick_one: "To start, choose an option bellow:"
+  welcome_coin: "Coins"
+  welcome_types: "Mining Types"
   links:
     edit: "Edit"
     show: "Show"
     delete: "Delete"
+    new: "New"
+    confirme: "Are you sure?"
+    back: "Voltar"
+    edit_coin: "Editing Coin"
+    edit_type: "Editing Type"
+    new_coin: "New Coin"
+    new_type: "New Mining Type"

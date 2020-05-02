@@ -1,79 +1,5 @@
 <!DOCTYPE html>
 <html>
-<style>
-
-  #page-container {
-    position: relative;
-    min-height: 100vh;
-  }
-
-  content-wrap {
-    padding-bottom: 2.5rem; /* Footer height */
-  }
-  body {
-    background-image: url("https://realinstitutodeoncologia.com.br/wp-content/uploads/2017/07/white-background-image-3.jpg");
-    background-color: #cccccc;
-  }
-
-  /*#footer {*/
-  /*  position: absolute;*/
-  /*  bottom: 0;*/
-  /*  width: 100%;*/
-  /*  height: 2.5rem;            !* Footer height *!*/
-  /*}*/
-  footer {
-    border-radius: 12px;
-    position: absolute;
-    bottom: 100px;
-    background-color: #777;
-    padding: 20px;
-    text-align: center;
-    color: white;
-    width: 99%;
-    align-content: flex-end;
-  }
-
-  .header {
-    border-radius: 12px;
-  }
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #BBBBBB;
-  }
-
-  li {
-    float: left;
-  }
-
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-  }
-
-  li a:hover {
-    background-color: #111111;
-  }
-
-  .button {
-    background-color: white;
-    border: none;
-    color: white;
-    padding: 10px 10px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 4px 2px;
-    /*cursor: pointer;*/
-  }
-  .button4 {border-radius: 12px;}
-</style>
 <link rel="header" type="text/css" href="header.css" media="screen"/>
 <head>
   <title>CryptoWallet</title>
@@ -85,29 +11,20 @@
 </head>
 
 <body>
-<div id="page-container">
-  <header>
-    <ul>
-      <li>
-        <%= link_to "Home Page", root_path %>
-      </li>
-      <li>
-        <%= link_to "Cadastro de Moedas", coins_path %>
-      </li>
-      <li>
-        <%= link_to "Cadastro de Tipos de Mineração", mining_types_path %>
-      </li>
-    </ul>
-  </header>
-
-
+<div class="container-fluid">
+  <ul class="nav  justify-content-end">
+    <li>
+      <%= link_to 'Home', root_path, class:"nav-link" %>
+    </li>
+    <li class="nav-item">
+      <%= link_to 'Português', '/?locale=pt-BR',class:"nav-link active" %>
+    </li>
+    <li class="nav-item">
+      <%= link_to 'English', '/?locale=en',class:"nav-link" %>
+    </li>
+  </ul>
   <%= yield %>
-
-  <footer>
-    <p>
-      Você está no ambiente de <strong> <%= ambiente_rails %></strong>
-    </p>
-  </footer>
+  <script> $.notify("Bem-Vindo!", "success")</script>
 </div>
 </body>
 </html>
